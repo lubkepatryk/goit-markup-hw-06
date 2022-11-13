@@ -42,14 +42,12 @@
             <li>
               <a href="mailto:info@devstudio.com" class="link contact"
                 ><svg class="icon-envelope" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
-              >
+                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
             </li>
             <li>
               <a href="tel:+48111111111" class="link contact"
                 ><svg class="icon-smartphone" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a
-              >
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a>
             </li>
           </ul>
         </div>
@@ -64,6 +62,35 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <h2>Zostaw swoje dane w formularzu poniżej</h2>
+              <form>
+                <label>
+                  Imię
+                  <input type="text" name="name" />
+                </label>
+                <label>
+                  Telefon
+                  <input type="tel" name="phone_number" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" />
+                </label>
+                <label>
+                  Komentarz
+                  <textarea
+                    name="komentarz"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </label>
+                <label>
+                  <input type="checkbox" name="policy" />
+                  Oświadczam iż akceptuję <a href="./">Regulamin</a> i
+                  <a href="./">Politykę Prywatności.</a>
+                </label>
+                <button type="submit">Wyślij</button>
+              </form>
               <button class="modal-button" type="button" data-modal-close>
                 <img src="./svg/close.svg" alt="close button" />
               </button>
@@ -359,6 +386,24 @@
               </svg>
             </div>
           </div>
+        </div>
+        <div class="container-newsletter">
+          <h3 class="heading-socials">Zapisz się do newslettera</h3>
+          <form>
+            <label>
+              <input
+                class="newsletter"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="newsletter-button" type="submit">
+              Zapisz się<svg class="icon-newsletter" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

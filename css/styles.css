@@ -454,7 +454,6 @@ ul {
 
 .socials-footer {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -479,7 +478,6 @@ ul {
 
 .container-footer {
   display: flex;
-  gap: 58px;
 }
 
 .heading-socials {
@@ -568,4 +566,43 @@ ul {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.newsletter {
+  width: 60%;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+  margin-right: 12px;
+}
+
+.newsletter-button {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px 76px 10px 42px;
+}
+
+.container-footer > div:not(:last-child) {
+  flex-grow: 1;
+}
+
+.container-newsletter {
+  flex-grow: 2;
+}
+
+.icon-newsletter {
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 3px;
 }
