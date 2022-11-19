@@ -124,15 +124,43 @@
                       placeholder="Wprowadź tekst"
                     ></textarea>
                   </fieldset>
-                  <label class="checkbox-form">
+                  <!-- <label class="checkbox-form">
                     <input type="checkbox" name="policy" />
                     <span class="accept">
+                      <svg class="checkbox-icon-unchecked" width="11" height="8">
+                        <use href="./images/icons.svg#icon-vector"></use>
+                      </svg>
+                      <svg class="checkbox-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-vector-unchecked"></use>
+                      </svg>
                       Oświadczam iż akceptuję
                       <a class="accept-link" href="./">Regulamin</a> i
                       <a class="accept-link" href="./">Politykę Prywatności.</a>
                     </span>
                     <span class="checkmark"></span>
-                  </label>
+                  </label> -->
+                  <label
+                  class="checkbox-form"
+                >
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="policy"
+                    required
+                  />
+                  <span class="accept"
+                    ><svg class="checkbox-icon-unchecked" width="11" height="8">
+                      <use href="./images/icons.svg#icon-vector"></use></svg><svg class="checkbox-icon" width="16" height="15">
+                      <use href="./images/icons.svg#icon-vector-unchecked"></use>
+                    </svg>
+      
+                    <span class="agreement">
+                      Oświadczam iż akceptuję
+                      <a class="accept-link" href="#">Regulamin</a> i
+                      <a class="accept-link" href="#">Politykę prywatności.</a>
+                    </span>
+                  </span>
+                </label>
                   <button class="button2" type="submit">Wyślij</button>
                 </form>
               </div>
